@@ -42,7 +42,9 @@
 							<input type="tel" name="tel" class="tel">
 						</dd>
 						<dt>
-							1+1=?
+							<span class="required">
+									1+1=?
+							</span>
 						</dt>
 						<dd>
 							<!--checked="checkedを忘れないようにする"-->
@@ -56,7 +58,9 @@
 							<textarea name="message" id="message" cols="30" rows="10"></textarea>
 						</dd>
 						<dt>
-							このページどう?
+							<span class="required">
+									このページどう?
+							</span>
 						</dt>
 						<dd>
 							<select name="type" class="type">
@@ -68,6 +72,14 @@
 						</dd>
 					</dl>
 				</form>
+			</div>
+			<button type="submit" class="btn">
+				送信
+			</button>
+			<div class="attention">
+				<p>
+					※「<span class="required"></span>」のついている項目は必須項目です。
+				</p>
 			</div>
 		</div><!--form-->
 		<div class="back">
