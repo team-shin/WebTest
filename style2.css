@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+    padding: 40px;
+    background: black;
+}
+
+.about{
+    
+    width : 400px;
+    background: rgb(0, 252, 84);
+}
+
+.form{
+    width:400px;
+    padding : 1px;
+    background: rgba(10, 247, 255, 0.87);
+}
+
+.back a,
+.back a:link,
+.back a:visited,
+.back a:hover,
+.back a:active {
+  color: #fff;
+}
