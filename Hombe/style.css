@@ -1,0 +1,41 @@
+body{
+    backgroud-color : #f2f7ff ;
+}
+
+.container{
+    width: 900px;
+    hight: 700px;
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #00ff05;
+}
+
+.HED{
+    //background-color : #00ff05;
+    width: 600px ;
+    height:150px ;
+    padding : 1px ;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.HED .bun{
+    font-size: 100px;
+    text-align: center;
+    display: none;
+}
+
+.Right{
+    width: 50%;
+    background-color : #21c4ed ;
+
+}
+
+.Left{
+    width: 50%;
+    background-color : deeppink;
+}
