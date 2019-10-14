@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style2.css">
 	<title>生田のテストページ</title>
+	<Script src="main.js"></Script>
 </head>
 <body>
 	<div class="ikuta_page">
@@ -17,7 +18,8 @@
 				<p>書き込んでみて</p>
 			</div>
 			<div class="form_body">
-				<form action="">
+			<!--action属性でinput時の実行内容を、onsubmit属性でsubmitの条件付け-->
+			<form action="index.html" name="f" onsubmit="return selcheck()">
 					<dl>
 						<dt>
 							<span class="required">
@@ -63,7 +65,7 @@
 							</span>
 						</dt>
 						<dd>
-							<select name="type" class="type">
+							<select name="type" class="type" id="type">
 								<option value="select">選択してください</option>
 								<option value="最高!">最高!</option>
 								<option value="普通">普通</option>
@@ -71,11 +73,9 @@
 							</select>
 						</dd>
 					</dl>
+					<input type="submit">
 				</form>
 			</div>
-			<button type="submit" class="btn">
-				送信
-			</button>
 			<div class="attention">
 				<p>
 					※「<span class="required"></span>」のついている項目は必須項目です。
