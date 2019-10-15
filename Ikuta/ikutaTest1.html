@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="style2.css">
 	<title>生田のテストページ</title>
 	<Script src="main.js"></Script>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.5/jquery.csv.min.js"></script>
 </head>
 <body>
 	<div class="ikuta_page">
@@ -18,8 +20,8 @@
 				<p>書き込んでみて</p>
 			</div>
 			<div class="form_body">
-			<!--action属性でinput時の実行内容を、onsubmit属性でsubmitの条件付け-->
-			<form action="index.html" name="f" onsubmit="return selcheck()">
+			<!--action属性でinput時の送信先を、onsubmit属性でsubmitの条件付け-->
+			<form action="" name="f" onsubmit="return selcheck()" method="POST">
 					<dl>
 						<dt>
 							<span class="required">
@@ -82,8 +84,9 @@
 				</p>
 			</div>
 		</div><!--form-->
+		<div id="csv-body"></div>
 		<div class="back">
-			<a href="index.html">トップに戻る</a>
+			<a href="../index.html">トップに戻る</a>
 		</div><!--back-->
 	</div><!--ikuta_page-->
 </body>
