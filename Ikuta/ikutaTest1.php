@@ -19,7 +19,7 @@
 			</div>
 			<div class="form_body">
 			<!--action属性でinput時の送信先を、onsubmit属性でsubmitの条件付け-->
-			<form action="confirm.php" name="f" onsubmit="return selcheck()" method="POST">
+			<form action="http://masacccch.php.xdomain.jp/confirm.php" name="f" onsubmit="return selcheck()" method="POST">
 					<dl>
 						<dt>
 							<span class="required">
