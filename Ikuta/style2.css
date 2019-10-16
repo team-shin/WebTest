@@ -23,3 +23,8 @@ body{
 .back a:active {
   color: #fff;
 }
+
+.required:after{
+    content: " * ";
+    color: #ff0000;
+}

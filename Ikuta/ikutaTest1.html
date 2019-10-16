@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style2.css">
 	<title>生田のテストページ</title>
+	<Script src="main.js"></Script>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.5/jquery.csv.min.js"></script>
 </head>
 <body>
 	<div class="ikuta_page">
@@ -17,7 +20,8 @@
 				<p>書き込んでみて</p>
 			</div>
 			<div class="form_body">
-				<form action="">
+			<!--action属性でinput時の送信先を、onsubmit属性でsubmitの条件付け-->
+			<form action="" name="f" onsubmit="return selcheck()" method="POST">
 					<dl>
 						<dt>
 							<span class="required">
@@ -42,7 +46,9 @@
 							<input type="tel" name="tel" class="tel">
 						</dd>
 						<dt>
-							1+1=?
+							<span class="required">
+									1+1=?
+							</span>
 						</dt>
 						<dd>
 							<!--checked="checkedを忘れないようにする"-->
@@ -56,10 +62,12 @@
 							<textarea name="message" id="message" cols="30" rows="10"></textarea>
 						</dd>
 						<dt>
-							このページどう?
+							<span class="required">
+									このページどう?
+							</span>
 						</dt>
 						<dd>
-							<select name="type" class="type">
+							<select name="type" class="type" id="type">
 								<option value="select">選択してください</option>
 								<option value="最高!">最高!</option>
 								<option value="普通">普通</option>
@@ -67,11 +75,18 @@
 							</select>
 						</dd>
 					</dl>
+					<input type="submit">
 				</form>
 			</div>
+			<div class="attention">
+				<p>
+					※「<span class="required"></span>」のついている項目は必須項目です。
+				</p>
+			</div>
 		</div><!--form-->
+		<div id="csv-body"></div>
 		<div class="back">
-			<a href="index.html">トップに戻る</a>
+			<a href="../index.html">トップに戻る</a>
 		</div><!--back-->
 	</div><!--ikuta_page-->
 </body>
