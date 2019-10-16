@@ -5,8 +5,6 @@
 	<link rel="stylesheet" href="style2.css">
 	<title>生田のテストページ</title>
 	<Script src="main.js"></Script>
-	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.5/jquery.csv.min.js"></script>
 </head>
 <body>
 	<div class="ikuta_page">
@@ -47,7 +45,7 @@
 						</dd>
 						<dt>
 							<span class="required">
-									1+1=?
+								1+1=?
 							</span>
 						</dt>
 						<dd>
@@ -84,7 +82,8 @@
 				</p>
 			</div>
 		</div><!--form-->
-		<div id="csv-body"></div>
+		<a class="twitter-timeline" href="https://twitter.com/NikuKyabe?ref_src=twsrc%5Etfw">Tweets by NikuKyabe</a> 
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<div class="back">
 			<a href="../index.html">トップに戻る</a>
 		</div><!--back-->
