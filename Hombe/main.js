@@ -37,7 +37,6 @@ $(function () {
                         $("#TX").val(resp[0]) ;
 
                     }else{
-                        alert('7');
                         return false;
                     }
                 }
