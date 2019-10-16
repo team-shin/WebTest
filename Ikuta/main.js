@@ -12,25 +12,3 @@ function selcheck() {
   alert("送信しました!");
   return true;
 }
-
-function readCsv(data) {
-  console.log("csvReadStart");
-  var target = '#csv-body';
-  var csv = $.csv.toArrays(data);
-  var insert = '';
-  $(csv).each(function() {
-      if (this.length > 0) {
-          insert += '<tr>';
-          $(this).each(function() {
-              insert += '<td>' + this + '</td>';
-          });
-          insert += '</tr>';
-      }
-  });
-  $(target).append(insert);
-}
-var csvfile = 'test1.csv';
-
-$(function(){
-  $.get(csvfile, readCsv, 'text');
-});
