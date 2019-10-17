@@ -25,7 +25,9 @@
         $fp = fopen("DATABASE.txt", "a");
          
         // CSV形式で書き込む
-        fwrite($fp, (array)$pData);
+        foreach($pData as $key => $value){
+            fwrite($fp, $key." , ".$value."\n");
+        }
          
         // ファイルを閉じる
         fclose($fp);
