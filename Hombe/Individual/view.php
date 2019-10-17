@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <title>�Ł[���[�ׁ[��</title>
+  <title>でーたーべーす</title>
 </head>
 <body>
 <?php
-// �ǂݍ��݃��[�h�Ńt�@�C�����J��
+// 読み込みモードでファイルを開く
 $fp = fopen("DATABASE.txt", "r");
  
-// �t�@�C����1�s���擾����
+// ファイルを1行ずつ取得する
 while ($line = fgets($fp)) {
   echo "$line<br>";
 }
  
-// �t�@�C�������
+// ファイルを閉じる
 fclose($fp);
 ?>
 </body>

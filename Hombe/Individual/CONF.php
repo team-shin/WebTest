@@ -25,10 +25,11 @@
         $fp = fopen("DATABASE.txt", "a");
          
         // CSV形式で書き込む
-        fwrite($fp, $pData);
+        fwrite($fp, (array)$pData);
          
         // ファイルを閉じる
         fclose($fp);
+        echo "<p>WRITED SUCCESS</p>" ;
          
         ?>
 
@@ -64,7 +65,8 @@
         <div class="Cwrite">
             <p>こちらの内容で書き込みました。</p>
             <?php print_r($pData) ?>
-            <p><a href="https://team-shin.github.io/WebTest/Hombe/HombeTest1.html">Hombeトップへ</a></p>
+            <p><a href="https://team-shin.github.io/WebTest/Hombe/HombeTest1.html">remote Hombeトップへ</a></p>
+            <p><a href="../HombeTest1.html">local Hombeトップへ</a></p>
         </div>
 
     </div>
