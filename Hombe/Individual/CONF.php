@@ -22,7 +22,7 @@
         <?php
          
         // 追記モード
-        $fp = fopen("fputcsv.csv", "a");
+        $fp = fopen("DATABASE.txt", "a");
          
         // CSV形式で書き込む
         fwrite($fp, $pData);
@@ -64,7 +64,7 @@
         <div class="Cwrite">
             <p>こちらの内容で書き込みました。</p>
             <?php print_r($pData) ?>
-            <p><a href="../HombeTest1.html">Hombeトップへ</a></p>
+            <p><a href="https://team-shin.github.io/WebTest/Hombe/HombeTest1.html">Hombeトップへ</a></p>
         </div>
 
     </div>
