@@ -1,11 +1,10 @@
 body{
     margin: 0px;
-    padding: 40px;
+    padding: 0px;
     background: black;
 }
 
 .about{
-    
     width : 400px;
     background: rgb(0, 252, 84);
 }
@@ -20,11 +19,74 @@ body{
 .back a:link,
 .back a:visited,
 .back a:hover,
-.back a:active {
+.back a:active
+.back a,
+.toTest2 a:link,
+.toTest2 a:visited,
+.toTest2 a:hover,
+.toTest2 a:active {
   color: #fff;
 }
 
 .required:after{
     content: " * ";
     color: #ff0000;
+}
+
+.twitter{
+    width : 20px;
+    float: left;
+}
+
+.drag{
+    width: 80px;
+    height: 80px;
+    background-color: #2e6da4;
+    color: #FFFFFF;
+    position : absolute;
+    float: left;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear : both;
+}
+
+.main{
+    float: left;
+}
+
+.drop_area {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #3a945b;
+    background: #f0fff0;
+  }
+
+.drop_area p {
+    margin: 10px;
+}
+
+.hobby-form{
+    float: left;
+}
+
+.hobby-list{
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #3a945b;
+    background: #f0fff0;
+    float: left;
+}
+
+.hobby{
+    width: 80px;
+    height: 80px;
+    background-color: #2e6da4;
+    color: #FFFFFF;
+    position : absolute;
+    float : left;
 }
